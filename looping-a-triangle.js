@@ -1,4 +1,4 @@
-//Triangle solution A
+//Triangle solution (mine)
 
 var x = "";
 for (i = 0; i < 7; i++) {
@@ -7,13 +7,13 @@ for (i = 0; i < 7; i++) {
 };
 
 
-//Triangle solution B (book)
+//Triangle solution (book)
 
 for (var line = "#"; line.length < 8; line += "#") {
   console.log(line);
 };
 
-//FizzBuzz solution
+//FizzBuzz solution (mine)
 
 for (var number=1; number <= 100; number++) {
   if (number % 15 === 0) {
@@ -26,6 +26,17 @@ for (var number=1; number <= 100; number++) {
     console.log(number);
   }  
 };
+
+//FizzBuzz solution (book)
+
+for (var n = 1; n <= 100; n++) {
+  var output = "";
+  if (n % 3 == 0)
+    output += "Fizz";
+  if (n % 5 == 0)
+    output += "Buzz";
+  console.log(output || n); // empty string returns false. "False" or n (which is "true") returns "true" (which is n in this case).
+}
 
 
 
