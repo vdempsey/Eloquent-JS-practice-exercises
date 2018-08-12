@@ -39,4 +39,23 @@ for (var n = 1; n <= 100; n++) {
 }
 
 
+//Chess Board
+var size = 8
+var a = "#";
+var b = "_";
+for (var i = 0; i < size; i++) {
+  if(i%2 == 0 && size%2 == 0) {
+    console.log((a + b).repeat(size/2));
+  }
+  if(i%2 !== 0 && size%2 == 0) {
+    console.log((b + a).repeat(size/2));
+  }  
+  if(i%2 == 0 && size%2 !== 0) {
+    console.log((a + b).repeat(size/2) + a);
+  }
+  if(i%2 !== 0 && size%2 !== 0) {
+    console.log((b + a).repeat(size/2) + b);
+  }
+}
+
 
