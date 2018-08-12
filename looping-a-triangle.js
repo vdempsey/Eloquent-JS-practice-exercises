@@ -40,7 +40,7 @@ for (var n = 1; n <= 100; n++) {
 
 
 //Chess Board
-var size = 8
+var size = 8;
 var a = "#";
 var b = "_";
 for (var i = 0; i < size; i++) {
