@@ -75,7 +75,20 @@ for (var y = 0; y < size; y++) {
 
 console.log(board);
 
+// Minimum (mine)...book offers the same code
 
+function min(a, b) {
+  if(a > b) {
+    return b;
+  } else {
+    return a;
+  }
+}
+
+console.log(min(3, 7));
+// 3;
+console.log(min(-10; 1));
+// -10;
 
 
 
