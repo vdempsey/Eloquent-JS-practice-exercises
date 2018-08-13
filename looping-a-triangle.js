@@ -39,8 +39,9 @@ for (var n = 1; n <= 100; n++) {
 }
 
 
-//Chess Board
-var size = 8;
+//Chess Board solution (mine)
+
+var size = 8; // size can be changed
 var a = "#";
 var b = "_";
 for (var i = 0; i < size; i++) {
@@ -57,5 +58,24 @@ for (var i = 0; i < size; i++) {
     console.log((b + a).repeat(size/2) + b);
   }
 }
+
+//Chess Board solution (book)
+
+var size = 8;
+var board = "";
+for (var y = 0; y < size; y++) {
+  for (var x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0)
+      board += " ";
+    else
+      board += "#";
+  }
+  board += "\n";
+}
+
+console.log(board);
+
+
+
 
 
