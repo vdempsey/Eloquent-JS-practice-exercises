@@ -107,3 +107,25 @@ function isEven(number) {
 console.log(isEven(50));
 console.log(isEven(75));
 console.log(isEven(-1));
+
+
+// Bean Counting
+
+function countChar (string, char) {
+  	var count = 0;
+  	for (var i = 0; i < string.length; i++) {
+      if (string.charAt(i) == char) {
+      	count += 1;
+      }
+    }
+  	return count;
+}
+
+function countBs (string) {
+  	return countChar(string, "B");
+}
+
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
