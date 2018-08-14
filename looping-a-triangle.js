@@ -24,7 +24,7 @@ for (var number=1; number <= 100; number++) {
   	console.log("Fizz");
   } else {
     console.log(number);
-  }  
+  }
 };
 
 //FizzBuzz solution (book)
@@ -50,7 +50,7 @@ for (var i = 0; i < size; i++) {
   }
   if(i%2 !== 0 && size%2 == 0) {
     console.log((b + a).repeat(size/2));
-  }  
+  }
   if(i%2 == 0 && size%2 !== 0) {
     console.log((a + b).repeat(size/2) + a);
   }
@@ -91,4 +91,19 @@ console.log(min(-10; 1));
 // -10;
 
 
+// Define a recursive function isEven
 
+function isEven(number) {
+  if(number == 0) {
+    return true;
+  } else if (number == 1) {
+    return false;
+  } else if (number < 1) {
+    return false;
+  } else {
+    return isEven(number - 2)
+  }
+}
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
