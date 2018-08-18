@@ -1,3 +1,5 @@
+//CHAPTER 2
+
 //Triangle solution (mine)
 
 var x = "";
@@ -75,6 +77,11 @@ for (var y = 0; y < size; y++) {
 
 console.log(board);
 
+// ---------------------------------------
+
+
+// CHAPTER 3
+
 // Minimum (mine)...book offers the same code
 
 function min(a, b) {
@@ -127,3 +134,55 @@ function countBs (string) {
 
 console.log(countBs("BBC"));
 console.log(countChar("kakkerlak", "k"));
+
+// ----------------------------------------
+
+
+// CHAPTER 4
+
+// The Sum of a Range
+
+function range(start, end) { // Initial range function
+  var numbersArr = [];
+  for (var number = start; number <= end; number ++) {
+    numbersArr.push(number);
+  }
+  return numbersArr;
+}
+
+console.log(range(1, 10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+function sum(numbersArray) {
+  var numbersSum = 0;
+  for (var i = 0; i <= numbersArray.length - 1; i++) {
+    numbersSum += numbersArray[i];
+  }
+  return numbersSum;
+}
+
+console.log(sum(range(1, 10))); // 55;
+
+function rangeModified(start, end, step) { // Modified range function
+  var numbersArr = [];
+  if (step > 0) {
+  	 for (var number = start; number <= end; number += step) {
+     numbersArr.push(number);
+  	}
+  } else if (step < 0) {
+  	for (var number = start; number >= end; number += step) {
+    numbersArr.push(number);
+    }
+  } else {
+  	for (var number = start; number <= end; number ++) {
+    numbersArr.push(number);
+  	}
+  }
+  // book offers a simpler solution for initial if statement:
+  //if (step == null) step = 1;
+  return numbersArr;
+}
+console.log(rangeModified(1, 10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(rangeModified(1, 10, 2)); // [1, 3, 5, 7, 9]
+console.log(rangeModified(5, 2, -1)); // [5, 4, 3, 2]
+
+// -------------------------------------------------------------

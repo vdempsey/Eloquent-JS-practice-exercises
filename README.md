@@ -3,12 +3,15 @@ _JavaScript refresh_
 
 
 ### Exercises:
-##### CH.2 PROGRAM STRUCTURE
+##### CH2 PROGRAM STRUCTURE
 1. Looping a Triangle
 2. FizzBuzz
 3. Chess Board
 
-##### CH.3 FUNCTIONS
+##### CH3 FUNCTIONS
 1. Minimum
 2. Recursion
 3. Bean Counting
+
+##### CH4 DATA STRUCTURES: OBJECTS AND ARRAYS
+1. The sum of a Range
