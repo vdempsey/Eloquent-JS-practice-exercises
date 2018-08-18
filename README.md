@@ -14,4 +14,5 @@ _JavaScript refresh_
 3. Bean Counting
 
 ##### CH4 DATA STRUCTURES: OBJECTS AND ARRAYS
-1. The sum of a Range
+1. The Sum of a Range
+2. Reversing an Array

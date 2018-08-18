@@ -186,3 +186,33 @@ console.log(rangeModified(1, 10, 2)); // [1, 3, 5, 7, 9]
 console.log(rangeModified(5, 2, -1)); // [5, 4, 3, 2]
 
 // -------------------------------------------------------------
+
+
+//Reversing an Array
+
+function reverseArray(arr) {
+  var newArr = [];
+  for( var i = arr.length - 1; i >= 0; i--) {
+    newArr.push(arr[i]);
+  }
+  return newArr;
+}
+
+console.log(reverseArray('A', 'B', 'C')); // ["C", "B", "A"]
+
+
+function reverseArrayInPlace(arrayValue) {
+	for (var i = 0; i < Math.floor(arrayValue.length / 2); i++) {
+    var original = arrayValue[i];
+    arrayValue[i] = arrayValue[arrayValue.length - 1 - i];
+    arrayValue[arrayValue.length - 1 - i] = original;
+  }
+  return arrayValue;
+}
+
+var arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue); // [5, 4, 3, 2, 1];
+
+
+// ---------------------------------------------------------
