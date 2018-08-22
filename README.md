@@ -16,3 +16,4 @@ _JavaScript refresh_
 ##### CH4 DATA STRUCTURES: OBJECTS AND ARRAYS
 1. The Sum of a Range
 2. Reversing an Array
+3. A List
